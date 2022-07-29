@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Footer from "./components/Footer";
 import Formulario from "./components/Formulario";
 import Header from "./components/Header";
 import ListadoPacientes from "./components/ListadoPacientes";
@@ -46,7 +47,10 @@ function App() {
           eliminarPaciente={eliminarPaciente}
           />
 
+ 
         </div>
+
+        <Footer/>
   </div>
   )
 }

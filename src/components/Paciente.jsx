@@ -5,7 +5,6 @@ const Paciente = ({paciente, setPaciente,eliminarPaciente}) => {
 
     const handleEliminar=()=>{
 
-
         const swalWithBootstrapButtons = Swal.mixin({
             customClass: {
               confirmButton: 'py-2 px-10 bg-red-600 hover:bg-red-700 text-white font-bold  uppercase rounded-lg',
@@ -42,26 +41,6 @@ const Paciente = ({paciente, setPaciente,eliminarPaciente}) => {
             }
           })
 
-/*
-        Swal.fire({
-            title: '¿Estas seguro?',
-            text: "Deseas eliminar el paciente?",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Borrar'
-        }).then((respuesta) => {
-            if (respuesta.isConfirmed) {
-                eliminarPaciente(id)
-            Swal.fire(
-                '¡Borrado!',
-                'Él paciente ha sido borrado satisfactoriamente..',
-                'success'
-            )
-        }
-        })
-*/
         /* 
         const respuesta= confirm('Deseas eliminar este paciente?');
         if(respuesta){
